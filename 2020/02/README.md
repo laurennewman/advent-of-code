@@ -3,7 +3,7 @@
 ## Part 1
 How many passwords are valid?
 
-Solution:
+Solution: 625
 
 ## Part 2
 
