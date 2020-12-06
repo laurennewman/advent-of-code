@@ -46,14 +46,11 @@ def solve_part_two(rule_one, rule_two, letter, password, valid_passwords_part_tw
     rule_one = rule_one - 1
     rule_two = rule_two - 1
 
-    if password[rule_one] is letter and password[rule_two] is letter:
-        pass
-    elif password[rule_one] is letter and password[rule_two] is not letter:
+    if password[rule_one] is letter and password[rule_two] is not letter:
         valid_passwords_part_two.append(password)
-    elif password[rule_one] is not letter and password[rule_two] is letter:
+
+    if password[rule_one] is not letter and password[rule_two] is letter:
         valid_passwords_part_two.append(password)
-    else:
-        pass
 
 
 if __name__ == "__main__":
